@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Lato|Staatliches" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <script src="https://kit.fontawesome.com/bac740f1ce.js" crossorigin="anonymous"></script>
   <title>NewsGrid | Latest News</title>
@@ -121,8 +121,8 @@
       <div>
         <h3>Email Newsletter</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <form>
-          <input type="email" placeholder="Enter Email...">
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="email" name="email" placeholder="Enter Email...">
           <input type="submit" value="Subscribe" class="btn btn-primary">
         </form>
       </div>
